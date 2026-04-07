@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+  <p id="message">Nothing happened yet</p>
+
+  <script>
+    const button = document.getElementById("myButton");
+    button.addEventListener("click", function() {
+      // change the message here
+      document.getElementById("message").innerText = "You clicked the button!";
+      
+      // change the background color here
+      document.body.style.backgroundColor = "lightyellow";
+
+      // add one more change here
+      button.innerText = "Clicked!";
+    });
+  </script>
+</body>
+</html>
